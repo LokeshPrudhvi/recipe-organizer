@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1 class="Welcome">Welcome to Recipe Organizer</h1>
+        <div class="create"  onclick="window.location.href='create.html'">
+            <h2 class="Welcome">Create New Recipe</h2>
+        </div>
+        <div id="recipe-list"></div>
+    </div>
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Recipe Image" style="max-width: 100%; height: auto;">
+            <p id="modal-description"></p>
+            <p id="modal-items"></p>
+            <button id="delete-recipe" class="delete-btn">Delete Recipe</button>
+        </div>
+    </div>    
+    
+    <script src="script.js"></script>
+    <script src="create-script.js"></script>
+</body>
+</html>
